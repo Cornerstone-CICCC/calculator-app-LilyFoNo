@@ -1,0 +1,25 @@
+.window-control {
+  padding: 8px;
+  display: flex;
+  gap: 8px;
+
+  button {
+    @extend .window-control-button;
+  }
+
+  &:hover {
+    button {
+      color: inherit;
+    }
+  }
+
+  &--close {
+    background-color: $close-button-color;
+  }
+  &--minimize {
+    background-color: $close-minimize-color;
+  }
+  &--maximize {
+    background-color: $close-maximize-color;
+  }
+}

@@ -1,0 +1,29 @@
+@import "variables";
+@import "buttons";
+@import "window-control";
+@import "display";
+@import "keypad";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $background-color;
+  min-width: 400px;
+}
+
+header {
+  padding: 30px;
+  text-align: center;
+  color: $font-color;
+}
+
+.calculator {
+  margin: 0 auto;
+  background-color: $display-color;
+  max-width: 300px;
+  border-radius: 12px 12px 0 0;
+}

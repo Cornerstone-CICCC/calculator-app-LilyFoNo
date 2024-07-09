@@ -1,0 +1,26 @@
+.window-control-button {
+  border: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 12px;
+  font-size: 8px;
+  font-weight: 700;
+  color: transparent;
+  cursor: pointer;
+
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+.keypad-button {
+  width: 100%;
+  padding: 16px;
+  font-size: 24px;
+  color: $font-color;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}

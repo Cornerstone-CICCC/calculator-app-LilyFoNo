@@ -1,0 +1,15 @@
+.display {
+  input {
+    padding: 4px;
+    width: 100%;
+    font-size: 48px;
+    color: $font-color;
+    border: none;
+    text-align: right;
+    background-color: inherit;
+
+    &:focus-visible {
+      outline: none;
+    }
+  }
+}

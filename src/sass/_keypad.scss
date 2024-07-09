@@ -1,0 +1,45 @@
+.keypad {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-auto-rows: 1fr auto;
+  grid-template-areas:
+    "reset operators"
+    "operands operators";
+
+  button {
+    @extend .keypad-button;
+  }
+
+  .reset {
+    grid-area: reset;
+
+    button {
+      background-color: $reset-color;
+    }
+  }
+
+  .operators {
+    grid-area: operators;
+
+    button {
+      background-color: $operator-color;
+    }
+  }
+
+  .operands {
+    grid-area: operands;
+
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+
+    &--0 {
+      flex: 1;
+    }
+
+    button {
+      flex-basis: calc(100% / 3);
+      background-color: $operand-color;
+    }
+  }
+}
